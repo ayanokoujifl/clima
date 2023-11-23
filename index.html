@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Temperatura</h1>
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="input-wrapper">
+          <input
+            type="text"
+            class="city-searcher"
+            placeholder="Ex: Belo Horizonte"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass"
+            onclick="handleChangeCity()"
+          ></i>
+        </div>
+        <div class="weather-info">
+          <h3 class="city">Belo Horizonte</h3>
+          <div class="temperature">
+            <i class="fa-solid fa-temperature-half fa-beat"></i>
+            <span class="temp"></span>
+          </div>
+          <div class="umi">
+            <i class="fa-solid fa-droplet fa-bounce"></i>
+            <span class="humidity"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
