@@ -5,7 +5,7 @@ const city = document.querySelector(".city")
 
 const getWeatherData = async () => {
   const response = await fetch(
-    "https://api.openweathermap.org/data/2.5/weather?q=Belo Horizonte&units=metric&appid=cf2c14152cb744c04d4e07d07693f525"
+    "https://api.openweathermap.org/data/2.5/weather?q=Belo Horizonte&units=metric&appid=34b2f341f158272c886ddec9c464958a"
   )
   const data = await response.json()
   temperature.innerHTML = parseInt(data.main.temp) + "ºC"
@@ -16,7 +16,7 @@ getWeatherData()
 
 const handleChangeCity = async () => {
   const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=cf2c14152cb744c04d4e07d07693f525`
+    `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=metric&appid=34b2f341f158272c886ddec9c464958a`
   )
   const data = await response.json()
   temperature.innerHTML = parseInt(data.main.temp) + "ºC"
